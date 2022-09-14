@@ -5,11 +5,12 @@ html,body{
     padding: 0px;
     background-image: absolute;
 }
+
 .linear{
     position: relative;
     background-image: linear-gradient(#3175B5,#204C75);
     height: 120%;
-    width: 100%;
+    width: 120%;
     margin: 0px;
     padding: 0px;
 }
@@ -40,21 +41,59 @@ font-style:oblique;
     color: black;
 }
 
-.kasse-tekst{
-position: relative;
-float: left;
+#tekst2{
+text-align: left;
 color: black;
-background-color: rgb(187,221,119);
-width: 100%;
-height: 50px;
-overflow: hidden;
-font-size: 38px
+overflow:visible;
+font-size: 30px
 }
 
+.box{
+width: auto; 
+height: auto;
+border: 5px solid lightblue;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+}
+
+.box-underside{
+width: auto; 
+height: auto;
+border: 5px solid lightblue;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+}
+
+.link{
+width: auto; 
+height: auto;
+border: 5px solid lightblue;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+}
 
 img {
   display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.eks{
+width: auto; 
+height: auto;
+border: 5px solid lightblue;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+}
+
+
+
 
