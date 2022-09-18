@@ -8,17 +8,8 @@ html,body{
 
 .linear{
     position: relative;
-    background-image: linear-gradient(#3175B5,#204C75);
-    height: 120%;
-    width: 120%;
-    margin: 0px;
-    padding: 0px;
-}
-
-.linear2{
-    position: relative;
-    background-image: linear-gradient(#3175B5,#204C75);
-    height: 120%;
+    background-image: linear-gradient(#3175B5,#1B57AB);
+    height: 100%;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -29,29 +20,24 @@ h1{
 font-style:oblique;
 }
 
-
 .overskrift{
     float:center;
-    width:100%;
-    height:100px;
     overflow:hidden;
     font-size: 50px;
     text-align: center;
     text-decoration-line: underline;
     color: black;
-}
-
-#tekst2{
-text-align: left;
-color: black;
-overflow:visible;
-font-size: 30px
+    border: 5px solid #4FB3F5;
+    padding: 5px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: white;
 }
 
 .box{
 width: auto; 
 height: auto;
-border: 5px solid lightblue;
+border: 5px solid #4FB3F5;
 padding: 10px;
 margin-left: auto;
 margin-right: auto;
@@ -61,39 +47,132 @@ background-color: white;
 .box-underside{
 width: auto; 
 height: auto;
-border: 5px solid lightblue;
+border: 5px solid #4FB3F5;
 padding: 10px;
 margin-left: auto;
 margin-right: auto;
 background-color: white;
 }
 
-.link{
-width: auto; 
-height: auto;
-border: 5px solid lightblue;
-padding: 10px;
-margin-left: auto;
-margin-right: auto;
-background-color: white;
-}
-
-img {
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .eks{
-width: auto; 
-height: auto;
-border: 5px solid lightblue;
+width: 47.8%; 
+height: 60%;
+border: 5px solid #4FB3F5;
 padding: 10px;
-margin-left: auto;
-margin-right: auto;
 background-color: white;
+position: relative;
+left:0px;
+top:100x;
 }
 
+.eks2{
+width: 47.8%; 
+height: 60%;
+border: 5px solid #4FB3F5;
+padding: 10px;
+background-color: white;
+position: relative;
+left:640px;
+top:-606px;
+}
 
+.b1{
+width: 47%; 
+height: 47%;
+border: 5px solid #4FB3F5;
+padding: 10px;
+margin: 20px;
+background-color: white;
+position: relative;
+top: -30px;
+left: -20px;
+}
+
+.b2{
+width: 47%; 
+height: 47%;
+border: 5px solid #4FB3F5;
+padding: 10px;
+margin: 20px;
+background-color: white;
+position: relative;
+top: -531px;
+left: 620px;
+}
+
+.bk1{
+width: 47.5%; 
+height: 50%;
+border: 5px solid #4FB3F5;
+padding: 10px;
+margin: 20px;
+background-color: white;
+position: relative;
+top: -70px;
+left: -20px; 
+}
+
+.bk2{
+width: 47.5%; 
+height: 50%;
+border: 5px solid #4FB3F5;
+padding: 10px;
+margin: 20px;
+background-color: white;
+position: relative;
+top: -600px;
+left: 623px; 
+}
+
+.ob{
+width: 97.7%; 
+height: 5%;
+border: 5px solid #4FB3F5;
+padding: 10px;
+margin: 20px;
+background-color: white;
+position: relative;
+top: -15px;
+left: -20px;
+font-size: 20px;
+}
+
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.link {
+  overflow: hidden;
+  background-color: #4FB3F5;
+}
+
+/* Style the topnav links */
+.link a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.link a:hover {
+  background-color: #4CC1FF;
+  color: white;
+}
 
 
