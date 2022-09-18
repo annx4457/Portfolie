@@ -138,16 +138,17 @@ left: -20px;
 font-size: 20px;
 }
 
-{
+*{
   box-sizing: border-box;
 }
+
 
 body {
   margin: 0;
 }
 
 /* Style the header */
-.header {
+.Ol {
   background-color: black;
   padding: 10px;
   text-align: center;
