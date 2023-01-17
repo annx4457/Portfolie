@@ -262,7 +262,7 @@ button:hover{
     width: 90%;
     position: absolute;
     left: 5%;
-    top: 55%;
+    top: 60%;
     transform: translateY(-50%);
     text-align: center;
     color: white;   
@@ -294,7 +294,7 @@ button:hover{
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-    background-image: url(screen.png);
+    background-image: url(Screen.png);
     background-position: center;
     background-size: cover;
     position: absolute;
