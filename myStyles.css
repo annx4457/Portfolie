@@ -237,8 +237,8 @@ button:hover{
 }
 
 .fusion{
-    width: 600px;
-    height: 430px;
+    width: 500px;
+    height: 400px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -249,8 +249,8 @@ button:hover{
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 46%;
-    left: 57%;
+    top: 47%;
+    left: 61%;
     transition: transform 0.5s;
 }
 
