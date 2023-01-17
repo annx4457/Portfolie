@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title> Hello </title>
+    <link rel="stylesheet" href="myStyles.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+   <div class="banner4">
+        <div class="menubar">
+            <img src="Rys.png" class="logo">
+            <ul>
+            <li><a href="index.html">Tilbage</a></li>
+            <li><a href="index3.html">Webtek</a></li>
+            <li><a href="#">IT-sikkerhed</a></li>
+            <li><a href="#">Forløb</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content4">
+            <h1>AstroPi - Intro og Projektbeskrivelse:</h1>
+            <p>ESA har placeret to RaspberryPi microcomputere om bord på den internationale
+            rumstation ISS. Computerne er udstyret med sensorer og to kameraer, et som peger ind i rumstationen og et som peger mod Jorden. I dette forløb arbejdede vi med pythonprogramering som vi skulle bruge til at kode et lille forsøg op til de RaspberryPi
+            som er på ISS. I dette projekt ville vi kode et program til AstroPi, som skulle kunne finde lokationen for ISS med formål at se om den bevægede sig i en ellipse, ligesom jordens bane om solen samt hvornår ISS har sin højeste og laveste acceleration. 
+            Koordinaterne fandtes ved hjælp biblioteket ”Orbit”, der indeholder lokationen for ISS på det nuværende tidspunkt. Samtidig med at AstroPi printer tiden, printer den de tilhørende koordinater på det givne tidspunkt. Til accelerationen brugte vi sensoren ”Accelerometer” til at finde ISS acceleration. Siden AstroPien ikke var oppe på rumstationen, målte vi accelerationen af vores egen AstroPi på jorden.</p> 
+            <div class="webboks3">
+            <h1>ESA’s specifikationer og vurdering af, hvilke rammer det sætter for vores projekt:</h1>
+            <p>ESA har en række forskellige retningslinjer, som faktisk gør det lidt svært at få lavet et ordenligt projekt. Dette er også forståeligt. Vi startede ud med en ide om at måle hvorvidt solen eller månen har en indvirkning på ISS's bane rundt om jorden. Grundet uoverenstemmelse med retningslinjerne, valgte vi derfor istedet at undersøge, hvorvidt ISS's bane er ellipseformet om jorden, som jordens bane om solen. Et af ESA's krav er, at forsøget ikke skal afhænge af en specifik begivenhed, som muligvis ikke vil finde sted i løbet af de 3 timer vi får lov til at køre eksperimentet. Dette lever vores projekt op til, da vi bare skal have så mange mulige koordinater i løbet af de 3 timer, for at bestemme bevægelsen. Der er samtidigt ikke behov for andet udstyr, kommunikation eller indgreb fra astronauter som også er krav sat af ESA.</p>
+            <div class="webboks4">
+            <h1>Beskrivelse af testmåling</h1>
+            <p>Her er et udsnit fra vores testmåling. Vores testmåling viser ISS placering sammensat af længdegradden, breddegraden samt afstanden fra jorden på et givent tidspunkt. Den sidste kolonne med acceleration viser accelerationen af vores AstroPi på jorden. Vi havde en hypotese om, at ISS bevæger sig rundt om jorden i en ellipse. ). Ud fra første række af koordinater fandt vi ISS's lokation til at være omkring sydeuropa, helt specifikt Guyana. Dog kørte vi ikke forsøget i de 3 angivet timer rundt om jorden, så vi kan ikke vide om ISS ville synke yderligere end den sidste række af koordinater. Med disse få data, kan vi snævert konkludere, at ISS virker til at have en ellipseformet bane rundt om jorden, nøjagtigt som jordens bane om solen.<br>Herunder kan vores program og/eller data fra testmålingen downloades:</p>
+            <div class="data"></div>
+            </div>
+            </div>
+         <div class="download"><p>Herunder kan vores program og/eller data fra testmålingen downloades:<br>
+             <button type="button2"><a href="Main.py" download>Kode - AstroPi</a><span></span></button> eller <button type="button2"><a href="dataSAFE.numbers" download>Data</a><span></span></button></p></div>
+        
+        <div class="flowt"><h2>Flowchart</h2><p>Sidst men ikke mindst, vises herunder vores flowchart over koden:</p></div>
+        <div class="flow"></div>
+        </div>
+        <div class="content5">
+        <h2>Gennemgang af kodestumper:</h2><p>Herunder ses forskellige kodestumper fra vores kode, der er essentielle for, at opsamle det data, vi har brug for: <br><br> Aller først skal der selvfølgelig importeres de biblioteker, som gør det muligt for os, at bruge sensoren og GPS'en der skal indsamle vores data. Eksempelvis gør biblioteket "math" det muligt for os at bruge sinus, cosinus og kvadrering til at behandle vores data. Biblioteket "sense_hat" gør det muligt for os at bruge sensorerne. 
+        Dette kan ses på nedenstående billede: </p>
+            <div class="kode1"></div>
+        <div class="tekst">
+            <p>Herefter skal der oprettes et seperat dokument, hvor vores data bliver opsamlet og skrevet ned. Dette kan ses på nedenstående billede. Først oprettes et dokument ved navn "dataSAFE.csv" og med "w" (overwrite) indskrives 5 kolonner med navnene "time, latitude, longitude, elevation, acceleration" og herefter "/n" for linjeskift. Dette illustreres på billedet til venstre "udsnit fra testmåling".</p>
+            </div><div class="kode2"></div>
+        <div class="tekst2">
+            <p>Koden skal jo selvfølgeligt kunne finde ud af at finde lokationen på ISS. Dettes gøres først ved import af biblioteket "orbit" hvorved ISS's lokation kan findes (vist på 1 billede). Herefter defineres en funktion ved navn "loc" og lokationen bliver sat til ISS's nuværende lokation. Herefter findes X-, Y- og Z-komposanterne af lokationen og funktionens resultater (data) returneres til "caller koden". Hele koden vises på nedenstående billede. </p><div class="kode3"></div>
+            </div>
+        <div class="tekst3">
+            <p>Sidst men ikke mindst, så skal programmet kunne indskrive de data som den opsamler undervejs. Billede af koden ses herunder. Først sættes variablen i = 0. Herefter, mens i&lt;12 skal det førhen oprettede dokument åbnes. Ved brug af while i&lt;12 vil Astropien køre koden så længe at i er mindre end 12. Herefter indskrives data (fra funktion loc()) i rækkefølge under hver kolonne og en ny linje tilføjes herefter. Hernæst står "a" (append), som gør, at der kan blive tilføjet noget til dokumentet, nemlig det, som førhen blev returneret. Dernæst venter programmet i 5 sekunder, i bliver 1 større vha. 1+=1 og til sidst kører koden igen. Dette gentages, indtil i&gt;12, hvorefter koden stopper.</p><div class="kode4"></div>
+            </div>
+        </div>
+    </body>
+</html>
